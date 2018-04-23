@@ -50,7 +50,7 @@ For information on the AccessToken, see the [AccessToken](https://docs.agora.io/
 
 ## Contact Us
 
-- You can find the full API document at the [Document Center](https://docs.agora.io/en/)
+- You can find the full API document at the [Developer Center](https://docs.agora.io/en/)
 - You can file a ticket about this demo at [issue](https://github.com/AgoraIO/OpenDuo-iOS-Objective-C/issues)
 
 ## License
