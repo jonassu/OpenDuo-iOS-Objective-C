@@ -1,47 +1,59 @@
-# Open Duo iOS for Objective C
+# Agora OpenDuo for iOS (Objective C)
 
 *其他语言版本： [简体中文](README.zh.md)*
 
-**In this sample project, the calculation of dynamic key is performed on the mobile device. For security and avoidance of errors, it is recommended to calculate on your own business server. Please refer to [Dynamic Key](https://docs.agora.io/en/2.0.2/product/Voice/Product%20Overview/key) **
+The Agora OpenDuo Sample App supports the following platforms:
+* iOS
+* [Android](https://github.com/AgoraIO/OpenDuo-Android)
+* [Web](https://github.com/AgoraIO/OpenDuo-Web)
 
-The Open Duo iOS for Objective C Sample App is an open-source demo that will help you get video chat integrated directly into your iOS applications using the Agora Video SDK and Agora Signaling SDK.
+This readme describes steps and several considerations for demonstrating the Agora OpenDuo iOS Sample App.
 
-With this sample app, you can:
+## A Brief Introduction
 
-- Login signaling service
-- Dial and call
-- Accept and hang up
-- Mute / unmute audio
+Built upon the Agora Video SDK and the Agora Signaling SDK, the Agora OpenDuo for iOS is an open-source demo that integrates video chat into your Web applications.
+
+This sample App allows you to:
+
+- Login the signaling server
+- Make a call
+- Accept or hang up a call
+- Mute/unmute a user
 - Switch camera
 
-Agora Video SDK and Agora Signaling SDK supports iOS / Android / Web etc. You can find demos of these platform here:
+## Preparing the Developer Environment
 
-- [OpenDuo-Android](https://github.com/AgoraIO/OpenDuo-Android)
-- [OpenDuo-Web](https://github.com/AgoraIO/OpenDuo-Web)
+* XCode 9.0 or higher version
+* an iPhone or an iPad
+
+NOTE: The iOS simulator is NOT supported.
 
 ## Running the App
-First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "KeyCenter.mm" with your App ID and App Certificate.
+1. Create a developer account at [Agora.io](https://dashboard.agora.io/signin/), obtain an App ID, and enable the App Certificate. 
+2. Fill in the AppID and the App Certificate in the KeyCenter.mm.
 
-```
-static NSString * const kAppID = @"Your App ID"
-static NSString * const kAppCertificate = @"Your App Certificate";
-```
+        static NSString * const kAppID = @"Your App ID"
+        static NSString * const kAppCertificate = @"Your App Certificate";
 
-Next, download the **Agora Video SDK** from [Agora.io SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy the **libs/AgoraRtcEngineKit.framework** to the "OpenDuo" folder in project. 
-Download the **Agora Signaling SDK**, unzip the downloaded SDK package and copy the **libs/AgoraSigKit.framework** to the "OpenDuo" folder in project.
+3. Download the **Agora Video SDK** and the **Agora Signaling SDK** from [Agora.io](https://www.agora.io/en/download/).
+4. Unzip the downloaded **Agora Video SDK** and copy **libs/AgoraRtcEngineKit.framework** to the *OpenDuo* folder of your project.
+5. Unzip the downloaded **Agora Signaling SDK** and copy **libs/AgoraSigKit.framework** to the *OpenDuo* folder of your project.
+6. Open OpenDuo.xcodeproj, connect your iPhone／iPad device, set up your development signing, and run the sample App.
 
-Finally, Open OpenDuo.xcodeproj, connect your iPhone／iPad device, setup your development signing and run.
+## About the Dynamic Key
 
-## Developer Environment Requirements
-* XCode 9.0 +
-* Real devices (iPhone or iPad)
-* iOS simulator is NOT supported
+This sample project has the dynamic key calculated on a mobile device. For security reasons and to avoid error, Agora recommends calculating the Dynamic key on your own business server. 
 
-## Connect Us
+For information on the SignalingToken, see the [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
 
-- You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/OpenDuo-iOS-Objective-C/issues)
+For information on the AccessToken, see the [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
+
+## Contact Us
+
+- You can find the full API document at the [Document Center](https://docs.agora.io/en/)
+- You can file a ticket about this demo at [issue](https://github.com/AgoraIO/OpenDuo-iOS-Objective-C/issues)
 
 ## License
 
-The MIT License (MIT).
+The MIT License (MIT). 
+
