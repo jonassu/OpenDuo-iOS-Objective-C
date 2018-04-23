@@ -23,14 +23,14 @@ This sample App allows you to:
 
 ## Preparing the Developer Environment
 
-* XCode 9.0 or higher version
+* XCode 9.0 or later
 * an iPhone or an iPad
 
 NOTE: The iOS simulator is NOT supported.
 
 ## Running the App
 1. Create a developer account at [Agora.io](https://dashboard.agora.io/signin/), obtain an App ID, and enable the App Certificate. 
-2. Fill in the AppID and the App Certificate in the KeyCenter.mm.
+2. Fill in the AppID and the App Certificate in the *KeyCenter.mm*.
 
         static NSString * const kAppID = @"Your App ID"
         static NSString * const kAppCertificate = @"Your App Certificate";
