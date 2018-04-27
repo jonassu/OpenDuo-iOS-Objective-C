@@ -44,13 +44,13 @@ NOTE: The iOS emulator is NOT supported.
 
 This sample project provides a preset Dynamic Key. For security reasons and to avoid errors, Agora recommends generating the Dynamic Key on your business server. 
 
-For information on the SignalingToken, see the [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
+For information on SignalingToken, see [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
 
-For information on the AccessToken, see the [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
+For information on AccessToken, see [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
 
 ## Contact Us
 
-- You can find the API documentation at the [Developer Center](https://docs.agora.io/en/).
+- You can find the API documentation at [Developer Center](https://docs.agora.io/en/).
 - You can report issues about this demo at [issue](https://github.com/AgoraIO/OpenDuo-iOS-Objective-C/issues).
 
 ## License
