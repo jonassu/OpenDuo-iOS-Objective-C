@@ -38,19 +38,19 @@ NOTE: The iOS emulator is NOT supported.
 3. Download the **Agora Video SDK** and the **Agora Signaling SDK** from [Agora.io](https://www.agora.io/en/download/).
 4. Unzip the downloaded **Agora Video SDK** and copy **libs/AgoraRtcEngineKit.framework** to the *OpenDuo* folder of your project.
 5. Unzip the downloaded **Agora Signaling SDK** and copy **libs/AgoraSigKit.framework** to the *OpenDuo* folder of your project.
-6. Open OpenDuo.xcodeproj, connect your iPhone／iPad device, set up your code signature, and run the sample app.
+6. Open OpenDuo.xcodeproj, connect your iPhone/iPad device, set up your code signature, and run the sample app.
 
 ## About the Dynamic Key
 
 This sample project provides a preset Dynamic Key. For security reasons and to avoid errors, Agora recommends generating the Dynamic Key on your business server. 
 
-For information on the SignalingToken, see the [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
+For information on SignalingToken, see [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
 
-For information on the AccessToken, see the [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
+For information on AccessToken, see [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
 
 ## Contact Us
 
-- You can find the API documentation at the [Developer Center](https://docs.agora.io/en/).
+- You can find the API documentation at [Developer Center](https://docs.agora.io/en/).
 - You can report issues about this demo at [issue](https://github.com/AgoraIO/OpenDuo-iOS-Objective-C/issues).
 
 ## License
