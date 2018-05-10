@@ -247,7 +247,7 @@
 }
 
 - (IBAction)acceptButtonClicked:(UIButton *)sender {
-    [signalEngine channelInviteAccept:self.channel account:self.remoteAccount uid:0];
+    [signalEngine channelInviteAccept:self.channel account:self.remoteAccount uid:0 extra:nil];
     
     self.callingLabel.hidden = YES;
     self.buttonStackView.axis = UILayoutConstraintAxisVertical;
