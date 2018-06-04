@@ -12,7 +12,7 @@
 		702F6E561FAB3F52009413E4 /* tones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 702F6E541FAB3F51009413E4 /* tones.mp3 */; };
 		7035E92E1FF3C43A00944D2D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7035E92D1FF3C43A00944D2D /* SystemConfiguration.framework */; };
 		705AF7D61FAC8B57002434E7 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */; };
-		705AF7DC1FAC8C8D002434E7 /* KeyCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 705AF7DA1FAC8C8D002434E7 /* KeyCenter.mm */; };
+		705AF7DC1FAC8C8D002434E7 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */; };
 		70D37E34200BA73A0034E06F /* AgoraSigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D37E33200BA73A0034E06F /* AgoraSigKit.framework */; };
 		70DA28421FA8455D00A56C64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28411FA8455D00A56C64 /* AppDelegate.m */; };
 		70DA28451FA8455D00A56C64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28441FA8455D00A56C64 /* LoginViewController.m */; };
@@ -38,10 +38,8 @@
 		702F6E541FAB3F51009413E4 /* tones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tones.mp3; sourceTree = "<group>"; };
 		7035E92D1FF3C43A00944D2D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcEngineKit.framework; path = OpenDuo/AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
-		705AF7D81FAC8C8D002434E7 /* DynamicKey4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey4.h; sourceTree = "<group>"; };
 		705AF7D91FAC8C8D002434E7 /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
-		705AF7DA1FAC8C8D002434E7 /* KeyCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KeyCenter.mm; sourceTree = "<group>"; };
-		705AF7DB1FAC8C8D002434E7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
 		70D37E33200BA73A0034E06F /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = OpenDuo/AgoraSigKit.framework; sourceTree = "<group>"; };
 		70DA283D1FA8455D00A56C64 /* OpenDuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DA28401FA8455D00A56C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,10 +89,8 @@
 		705AF7D71FAC8C8D002434E7 /* KeyCenter */ = {
 			isa = PBXGroup;
 			children = (
-				705AF7D81FAC8C8D002434E7 /* DynamicKey4.h */,
 				705AF7D91FAC8C8D002434E7 /* KeyCenter.h */,
-				705AF7DA1FAC8C8D002434E7 /* KeyCenter.mm */,
-				705AF7DB1FAC8C8D002434E7 /* utils.h */,
+				705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */,
 			);
 			path = KeyCenter;
 			sourceTree = "<group>";
@@ -242,7 +238,7 @@
 				70E49ED81FA9CD7C0062B0D5 /* AlertUtil.m in Sources */,
 				70DA286F1FA86D4300A56C64 /* DialViewController.m in Sources */,
 				70DA28451FA8455D00A56C64 /* LoginViewController.m in Sources */,
-				705AF7DC1FAC8C8D002434E7 /* KeyCenter.mm in Sources */,
+				705AF7DC1FAC8C8D002434E7 /* KeyCenter.m in Sources */,
 				70DA28501FA8455D00A56C64 /* main.m in Sources */,
 				702F6E451FAAC701009413E4 /* NSObject+JSONString.m in Sources */,
 				70DA28721FA86D5400A56C64 /* CallViewController.m in Sources */,

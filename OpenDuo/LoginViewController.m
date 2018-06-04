@@ -72,11 +72,9 @@
     NSString *account = self.accountTextField.text;
     if (account.length > 0) {
         [self.accountTextField resignFirstResponder];
-        [signalEngine login:[KeyCenter appId]
-                       account:account
-                         token:[KeyCenter generateSignalToken:account expiredTime:3600]
-                           uid:0
-                      deviceID:nil];
+        
+        NSString *sigToken = @"_no_need_token";
+        [signalEngine login:[KeyCenter appId] account:account token:sigToken uid:0 deviceID:nil];
     }
 }
 

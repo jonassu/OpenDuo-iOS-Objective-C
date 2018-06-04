@@ -30,10 +30,9 @@ NOTE: The iOS emulator is NOT supported.
 
 ## Running the App
 1. Create a developer account at [Agora.io](https://dashboard.agora.io/signin/), obtain an App ID, and enable the App Certificate. 
-2. Fill in the AppID and the App Certificate in the *KeyCenter.mm*.
+2. Fill in the AppID in the *KeyCenter.m*.
 
-        static NSString * const kAppID = @"Your App ID"
-        static NSString * const kAppCertificate = @"Your App Certificate";
+        static NSString * const kAppID = @"Your App ID";
 
 3. Download the **Agora Video SDK** and the **Agora Signaling SDK** from [Agora.io](https://www.agora.io/en/download/).
 4. Unzip the downloaded **Agora Video SDK** and copy **libs/AgoraRtcEngineKit.framework** to the *OpenDuo* folder of your project.
@@ -42,11 +41,11 @@ NOTE: The iOS emulator is NOT supported.
 
 ## About the Dynamic Key
 
-This sample project provides a preset Dynamic Key. For security reasons and to avoid errors, Agora recommends generating the Dynamic Key on your business server. 
+For security, Agora recommends enabling the Dynamic Key.
 
-For information on SignalingToken, see [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling?platform=All%20Platforms).
+For information on SignalingToken, see [SignalingToken](https://docs.agora.io/en/2.2/addons/Signaling/Agora%20Basics/key_signaling).
 
-For information on AccessToken, see [AccessToken](https://docs.agora.io/en/2.2/product/Interactive%20Broadcast/Agora%20Basics/key_native?platform=Android). 
+For information on AccessToken, see [AccessToken](https://docs.agora.io/en/2.2/product/Video/Agora%20Basics/key_native). 
 
 ## Contact Us
 

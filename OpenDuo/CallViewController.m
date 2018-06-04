@@ -311,8 +311,8 @@
 }
 
 - (void)joinChannel {
-    NSString *key = [KeyCenter generateMediaKey:self.channel uid:self.localUID expiredTime:0];
-    int result = [mediaEngine joinChannelByToken:key channelId:self.channel info:nil uid:self.localUID joinSuccess:nil];
+    NSString *mediaToken = nil;
+    int result = [mediaEngine joinChannelByToken:mediaToken channelId:self.channel info:nil uid:self.localUID joinSuccess:nil];
     if (result != AgoraEcode_SUCCESS) {
         NSLog(@"Join channel failed: %d", result);
         

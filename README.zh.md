@@ -2,7 +2,7 @@
 
 *Read this in other languages: [English](README.md)*
 
-**本示例项目中动态密钥的计算在移动设备上执行，为了安全和避免出错，建议正式环境中在自己的业务服务器计算，参考 [动态密钥鉴权](https://docs.agora.io/cn/2.0.2/product/Voice/Product%20Overview/key)**
+**为了安全，建议正式环境中启用 [动态密钥鉴权](https://docs.agora.io/cn/2.2/product/Video/Agora%20Basics/key_native) 机制**
 
 这个开源示例项目演示了如何快速集成 Agora 视频 SDK 和信令 SDK，实现1对1视频通话。
 
@@ -20,11 +20,10 @@ Agora 视频 SDK 和信令 SDK 支持 iOS / Android / Web 等多个平台，你�
 - [OpenDuo-Web](https://github.com/AgoraIO/OpenDuo-Web)
 
 ## 运行示例程序
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID  和 AppCertificate 填写进 KeyCenter.mm。
+首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID 填写进 KeyCenter.m。
 
 ```
-static NSString * const kAppID = @"Your App ID"
-static NSString * const kAppCertificate = @"Your App Certificate";
+static NSString * const kAppID = @"Your App ID";
 ```
 
 然后在 [Agora.io SDK](https://www.agora.io/cn/download/)
