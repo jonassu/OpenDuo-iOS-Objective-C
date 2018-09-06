@@ -14,6 +14,7 @@
 		705AF7D61FAC8B57002434E7 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */; };
 		705AF7DC1FAC8C8D002434E7 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */; };
 		70D37E34200BA73A0034E06F /* AgoraSigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D37E33200BA73A0034E06F /* AgoraSigKit.framework */; };
+		70D88DE72140D83E00FAB445 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D88DE62140D83E00FAB445 /* Accelerate.framework */; };
 		70DA28421FA8455D00A56C64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28411FA8455D00A56C64 /* AppDelegate.m */; };
 		70DA28451FA8455D00A56C64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28441FA8455D00A56C64 /* LoginViewController.m */; };
 		70DA28481FA8455D00A56C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DA28461FA8455D00A56C64 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		705AF7D91FAC8C8D002434E7 /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
 		705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
 		70D37E33200BA73A0034E06F /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = OpenDuo/AgoraSigKit.framework; sourceTree = "<group>"; };
+		70D88DE62140D83E00FAB445 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		70DA283D1FA8455D00A56C64 /* OpenDuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DA28401FA8455D00A56C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70DA28411FA8455D00A56C64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D88DE72140D83E00FAB445 /* Accelerate.framework in Frameworks */,
 				70D37E34200BA73A0034E06F /* AgoraSigKit.framework in Frameworks */,
 				7035E92E1FF3C43A00944D2D /* SystemConfiguration.framework in Frameworks */,
 				705AF7D61FAC8B57002434E7 /* AgoraRtcEngineKit.framework in Frameworks */,
@@ -144,6 +147,7 @@
 		70DA28561FA84F5A00A56C64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70D88DE62140D83E00FAB445 /* Accelerate.framework */,
 				70D37E33200BA73A0034E06F /* AgoraSigKit.framework */,
 				705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */,
 				7035E92D1FF3C43A00944D2D /* SystemConfiguration.framework */,
@@ -384,7 +388,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48TB6ZZL5S;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenDuo",
@@ -400,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.agora.OpenDuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dc253ab3-71e4-40a3-a57c-a3a763407202";
-				PROVISIONING_PROFILE_SPECIFIER = AgoraIODev2017;
+				PROVISIONING_PROFILE_SPECIFIER = AgoraIODev2018;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -412,7 +416,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48TB6ZZL5S;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenDuo",

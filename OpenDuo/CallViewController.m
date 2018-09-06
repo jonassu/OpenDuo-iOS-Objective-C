@@ -293,7 +293,12 @@
     //[mediaEngine setParameters:@"{\"rtc.log_filter\":65535}"];
     
     [mediaEngine enableVideo];
-    [mediaEngine setVideoProfile:AgoraVideoProfileLandscape360P swapWidthAndHeight:NO];
+    
+    AgoraVideoEncoderConfiguration *videoConfiguration = [[AgoraVideoEncoderConfiguration alloc] initWithSize:AgoraVideoDimension640x360
+                                                                                                    frameRate:AgoraVideoFrameRateFps15
+                                                                                                      bitrate:AgoraVideoBitrateStandard
+                                                                                              orientationMode:AgoraVideoOutputOrientationModeAdaptative];
+    [mediaEngine setVideoEncoderConfiguration:videoConfiguration];
 }
 
 - (void)startLocalVideo {
